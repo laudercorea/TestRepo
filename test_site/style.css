@@ -55,6 +55,12 @@ table {
 }
 
 /* END OF CLEARFIX */
+::selection {
+        background: #e44514; /* Safari */
+        }
+::-moz-selection {
+        background: #e44514; /* Firefox */
+}
 
 body
 {
@@ -134,7 +140,7 @@ h3
 	font-size: 230pt;
 	color: #f99c77;
 	text-shadow: #222222 0 -2px 0;
-	margin: 0;
+	margin: -40px 0 0 0;
 	letter-spacing: -0.05em;
 }
 
@@ -183,7 +189,8 @@ ul.boxes p
 .big_number
 {
 	float: left;
-	margin: -40px 0 0 -10px;
+	margin: 0 0 0 -10px;
+	padding: 0;
 }
 
 .nonsense
