@@ -55,12 +55,6 @@ table {
 }
 
 /* END OF CLEARFIX */
-::selection {
-        background: #e44514; /* Safari */
-        }
-::-moz-selection {
-        background: #e44514; /* Firefox */
-}
 
 body
 {
@@ -75,7 +69,7 @@ body
 {
 	margin: 0 auto;
 	max-width: 960px;
-	padding: 100px 0 0 0;
+	padding: 100px 30px 0px 30px;
 	text-align: left;
 	overflow: visible;
 }
@@ -124,10 +118,10 @@ h1
 
 h2
 {
-	font-family: Helvetica, Arial, Sans-serif;
-	font-weight: normal;
+	font-family: Helvetica Neue, Arial, Sans-serif;
+	font-weight: 100;
 	font-style: italic;
-	font-size: 24pt;
+	font-size: 45px;
 	color: #f99c77;
 	text-shadow: #222222 0 -2px 0;
 	margin: 0;
@@ -142,6 +136,30 @@ h3
 	text-shadow: #222222 0 -2px 0;
 	margin: -40px 0 0 0;
 	letter-spacing: -0.05em;
+	position: relative;
+	-webkit-transition: 0.5s ease-in-out all;
+	   -moz-transition: 0.5s ease-in-out all;
+	    -ms-transition: 0.5s ease-in-out all;
+	     -o-transition: 0.5s ease-in-out all;
+	        transition: 0.5s ease-in-out all;
+	
+}
+
+h3:hover{
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	top: -5px;
+	color: #fff;
 }
 
 h4
@@ -155,21 +173,25 @@ h4
 	margin: 0 0 10px 0;
 }
 
-ul.boxes
-{
-	width: 980px;
+ul.boxes{
+	margin-top: 5%;
+	width: 100%;
 }
 
 ul.boxes li
 {
-	max-width: 266px;
+	width: 27%;
 	background-color: #3f3f3f;
 	box-shadow: #181818 0 -1px 0,
 	#6c6c6c 0 1px 0;
 	padding: 20px;
 	list-style-type: none;
 	float: left;
-	margin: 40px 20px 0 0;
+	margin-right: 3.3%; /* mygawd, deese boxes are all strechy nao */
+}
+
+li.last{
+	margin-right: 0 !important;
 }
 
 ul.boxes p
@@ -201,3 +223,10 @@ ul.boxes p
 	padding: 0 0 0 25px;
 }
 
+/* These shits belong at the bottom :) */
+::selection {
+        background: #e44514; /* Safari */
+        }
+::-moz-selection {
+        background: #e44514; /* Firefox */
+}
