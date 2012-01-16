@@ -1,0 +1,35 @@
+body
+{
+	background-image: url('images/pattern.jpg');
+	background-repeat: repeat;
+	background-color: #454545;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 960px;
+	padding: 100px 0 0 0;
+}
+
+h1
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	font-size: 45pt;
+	color: #3f3f3f;
+	text-shadow: #181818 0 -1px 0,
+	#6c6c6c 0 1px 0;
+	margin: 0;
+}
+
+h2
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-weight: normal;
+	font-size: 25pt;
+	color: #f8b412;
+	text-shadow: #181818 0 -1px 0,
+	#6c6c6c 0 1px 0;
+	margin: 0;
+}
