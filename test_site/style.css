@@ -137,11 +137,6 @@ h3
 	margin: -40px 0 0 0;
 	letter-spacing: -0.05em;
 	position: relative;
-	-webkit-transition: 0.5s ease-in-out all;
-	   -moz-transition: 0.5s ease-in-out all;
-	    -ms-transition: 0.5s ease-in-out all;
-	     -o-transition: 0.5s ease-in-out all;
-	        transition: 0.5s ease-in-out all;
 	
 }
 
@@ -180,14 +175,16 @@ ul.boxes{
 
 ul.boxes li
 {
-	width: 27%;
+	width: 26%;
 	background-color: #3f3f3f;
-	box-shadow: #181818 0 -1px 0,
-	#6c6c6c 0 1px 0;
 	padding: 20px;
 	list-style-type: none;
 	float: left;
-	margin-right: 3.3%; /* mygawd, deese boxes are all strechy nao */
+	margin-right: 4.7%; /* mygawd, deese boxes are all strechy nao */
+	-webkit-box-shadow: 0 -1px #181818, #6c6c6c 0 1px 0;
+	   -moz-box-shadow: 0 -1px #181818, #6c6c6c 0 1px 0;
+	        box-shadow: 0 -1px #181818, #6c6c6c 0 1px 0;
+	
 }
 
 li.last{
@@ -271,12 +268,90 @@ p.helvetica2:hover
 	text-shadow: 0 0 50px rgba(255,255,255,0.5);
 }
 
+/* Two can play at that game :) */
+
+#neue{
+	font-family: "Helvetica Neue", Arial, Sans-serif;
+	font-size: 240px;
+	text-rendering: optimizeLegibility;
+	font-weight: 100;
+	color: #3f3f3f;
+	background-color: #f99c77;
+	padding: 20px;
+	margin: 0 0 50px 0;
+	height: 280px;
+	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	width: 96%;
+	position: relative;
+	cursor: default;
+}
+
+.foreground, .background, #neue span{
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.005, 0.945); 
+	   -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.005, 0.945); 
+	    -ms-transition: all 500ms cubic-bezier(0.250, 0.460, 0.005, 0.945); 
+	     -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.005, 0.945); 
+	        transition: all 500ms cubic-bezier(0.250, 0.460, 0.005, 0.945);
+}
+
+#neue .background{
+	font-size: 300px;
+	position: absolute;
+	top: -25px;
+	color: rgba(63,63,63,0.6);
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	text-shadow: ;
+	z-index: 1;
+	overflow: hidden;
+	width: 98%;
+}
+
+#neue:hover .background{
+	margin-left: -80px;
+	width: 110%;
+	text-shadow: 0px 0px 50px #000;
+	color: transparent;
+	padding: 50px;
+}
+
+#neue .foreground{
+	z-index: 2;
+	margin-top: -20px;
+	text-shadow: 0px 0px 50px #454545, 0px 0px 50px #454545;
+	color: transparent;
+	position: relative;
+}
+
+#neue span{
+	color: transparent;
+	font-size: 300px;
+	position: relative;
+	top: 20px;
+	text-shadow: none;
+}
+
+#neue:hover .foreground{
+	margin-left: 150px;
+	text-shadow: none;
+	color: #454545;
+}
+
+#neue:hover span{
+	color: #fff;
+	text-shadow: 0px 0px 10px #fff;
+}
+	
 
 
 
 
-
-/* These shits belong at the bottom :) */
 ::selection {
         background: #f16a34; /* Safari */
         }
