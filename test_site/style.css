@@ -211,7 +211,7 @@ ul.boxes p
 .big_number
 {
 	float: left;
-	margin: 0 0 0 -10px;
+	margin: 0 0 -40px -10px;
 	padding: 0;
 }
 
@@ -223,10 +223,65 @@ ul.boxes p
 	padding: 0 0 0 25px;
 }
 
+#helvetica_box
+{
+	width: 920px;
+	background-color: #f99c77;
+	padding: 20px;
+	margin: 0 0 50px 0;
+	height: 280px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+p.helvetica1
+{
+	font-family: Helvetica Neue, Arial, Sans-serif;
+	font-weight: bold;
+	font-size: 201pt;
+	height:;
+	color: #fff;
+	text-shadow: #181818 0 -1px 0;
+	margin: -100px 0 0 0;
+	float: left;
+}
+
+/* Just stole your style <3 */
+
+p.helvetica2
+{
+	float: left;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	font-size: 139pt;
+	letter-spacing: -0.06em;
+	color: #3f3f3f;
+	text-shadow: #181818 0 -1px 0;
+	margin: 0 0 0 10px;
+	-webkit-transition: 0.3s ease-in-out all;
+	   -moz-transition: 0.3s ease-in-out all;
+	    -ms-transition: 0.3s ease-in-out all;
+	     -o-transition: 0.3s ease-in-out all;
+	        transition: 0.3s ease-in-out all;
+}
+
+p.helvetica2:hover
+{
+	color: transparent;
+	text-shadow: 0 0 50px rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
 /* These shits belong at the bottom :) */
 ::selection {
-        background: #e44514; /* Safari */
+        background: #f16a34; /* Safari */
         }
 ::-moz-selection {
-        background: #e44514; /* Firefox */
+        background: #f16a34; /* Firefox */
 }
+
+
